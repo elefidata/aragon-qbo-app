@@ -1,0 +1,58 @@
+/* Aragon Books AI — public policy pages for Intuit's app questionnaire */
+:root {
+  --bg: #f6f4ef;
+  --paper: #fffcf7;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --line: #e4e0d8;
+  --navy: #1b365d;
+  --navy-hover: #142844;
+  --accent: #8a6d3b;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+header {
+  background: var(--navy);
+  color: #f8f5ef;
+  padding: 1.25rem 1.5rem;
+}
+header .wrap, main, footer .wrap { max-width: 44rem; margin: 0 auto; }
+header a { color: inherit; text-decoration: none; }
+header .brand { font-weight: 650; letter-spacing: 0.02em; }
+header .sub { color: #c9c3b8; font-size: 0.85rem; margin-top: 0.15rem; }
+nav { margin-top: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.75rem 1.15rem; font-size: 0.92rem; }
+nav a { color: #e8e2d6; text-decoration: none; border-bottom: 1px solid transparent; }
+nav a:hover, nav a[aria-current="page"] { color: #fff; border-bottom-color: var(--accent); }
+main { padding: 2rem 1.5rem 3rem; }
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.75rem 1.6rem;
+  box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
+}
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 0.35rem; color: var(--navy); }
+.lede { color: var(--muted); margin: 0 0 1.4rem; }
+h2 { font-size: 1.15rem; color: var(--navy); margin: 1.6rem 0 0.4rem; }
+p, li { color: #292524; }
+ul { padding-left: 1.2rem; }
+a { color: var(--navy); }
+a:hover { color: var(--navy-hover); }
+.meta { font-size: 0.9rem; color: var(--muted); }
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 1.5rem 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+footer a { color: var(--muted); }
+@media (max-width: 520px) {
+  h1 { font-size: 1.45rem; }
+  .card { padding: 1.25rem 1.1rem; }
+}
